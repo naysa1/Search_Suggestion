@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Autocomplete</title>
+    <link rel="stylesheet" href="src/styles/search.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+        <form autocomplete="off" id="search_form">
+            <label htmlFor="search_bar" class="search_question">Please start searching: </label>
+            <input id="search_bar" name="search_bar" type="text" class="search_bar"required/>
+            <datalist id="queries"></datalist>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="src/scripts/search.js"></script>
+  </body>
+</html>
+
